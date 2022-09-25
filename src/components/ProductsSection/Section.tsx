@@ -40,7 +40,6 @@ export const Section = () => {
               setFilterInput(e.target.checked === true ? e.target.value : "")
             }
           />childish
-         
           <input
             type="radio"
             name="radio"
@@ -69,7 +68,8 @@ export const Section = () => {
       <div className="card-section">
         {filter.map((item: api, index: number) => {
           const { id, name, price, image } = item;
-          const delay = `${index + 1}00ms`
+          const delay = `${index + 1}00ms`;
+
           return (
             <Card key={id} name={name} id={id} price={price} img={image} delay={delay}/>
           );

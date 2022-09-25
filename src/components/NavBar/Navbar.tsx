@@ -1,10 +1,8 @@
 import './Navbar.scss'
 import '../../Global.scss'
 export const Navbar = () =>{
-    
-  
     return(
-    <div className='navbar-component' style={{backdropFilter: "blur(10px)"}}>
+    <div className='navbar-component' >
         <figure>
             <img src='https://1757140519.rsc.cdn77.org/blog/wp-content/uploads/sites/6/2019/03/0008_h_street-shoes-logo_13.png' alt="Logo" />
         </figure>
