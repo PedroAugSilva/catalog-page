@@ -24,6 +24,7 @@ export const Section = () => {
       : data;
 
     const brandNames = ["adidas", "Asics", "Fila", "Mizuno", "Nike","Oakley", "Puma"];
+ 
 
   return (
     <div className="section">
@@ -65,12 +66,12 @@ export const Section = () => {
               ))}
           </div>
       </div>
-
       <div className="card-section">
-        {filter.map((item: api) => {
+        {filter.map((item: api, index: number) => {
           const { id, name, price, image } = item;
+          const delay = `${index + 1}00ms`
           return (
-            <Card key={id} name={name} id={id} price={price} img={image} />
+            <Card key={id} name={name} id={id} price={price} img={image} delay={delay}/>
           );
         })}
       </div>

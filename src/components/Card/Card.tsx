@@ -6,12 +6,13 @@ import "./Card.scss";
     name: string,
     price: number,
     img: string,
-    id: number
+    id: number,
+    delay: string
   }
-export const Card: React.FC<api> = ({ name, price, img, id }) => {
+export const Card: React.FC<api> = ({ name, price, img, id, delay }) => {
   
   return (
-    <div className="card">
+    <div className="card" style={{animationDelay: delay}}>
       <figure>
         <img
           src={img}

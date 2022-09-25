@@ -4,6 +4,7 @@ import  { Title } from './components/Title/Title'
 import { Section } from './components/ProductsSection/Section'
 
 function App() {
+  console.log('render')
   return (
     <>
     <Navbar/>
