@@ -1,7 +1,8 @@
-## Command: yarn or npm install
+## Commands:
+<code> yarn or npm install</code>
 
 install the necessary dependencies
 
-## Command: yarn start or npm start
+<code>yarn start or npm start</code>
 
 will launch the application in the browser
