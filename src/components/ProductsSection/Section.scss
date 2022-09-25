@@ -27,12 +27,40 @@
         }
     }
   }
-  .card-section {
+  
+}
+.card-section {
     width: 80vw;
     height: max-content;
     padding-left: 1rem;
     display: grid;
     grid-template-columns: repeat(4, 265px);
     grid-auto-rows: 340px;
+  }
+  @media screen and (min-width: 1919px) {
+    .card-section{
+        display: grid;
+        grid-template-columns: repeat(6, 265px);
+        grid-auto-rows: auto;
+    }
+    .section{
+      .filter-section{
+        width: 15vw;
+        font-size: 15pt;
+      }
+
+    }
+}
+@media screen and (min-width: 1600px) and (max-width: 1919px){
+  .card-section{
+      display: grid;
+      grid-template-columns: repeat(5, 265px);
+      grid-auto-rows: auto;
+  }
+  .section{
+    .filter-section{
+      font-size: 15pt;
+    }
+
   }
 }
