@@ -1,9 +1,10 @@
 .title{
     width: 100vw;
-    height: 150px;
+    height: calc(150px + 10vh) ;
     align-items: center;
     justify-content: center;
     display: flex;
+
 }
 .title h1{
     font-size: 35pt;
@@ -12,8 +13,8 @@
 .title figure{
     position: absolute;
     width: 500px;
-    right: -350px;
-    top: -2vh;
+    right: -360px;
+    top: -10vh;
     z-index: -1;
     transform: scale(1.5) rotate(-30deg);
     opacity: 80%;
